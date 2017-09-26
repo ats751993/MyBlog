@@ -1,0 +1,43 @@
+<div class="row margin">
+ <div class="col-md-5 well border">
+   <h3 style="text-align:center">Registration</h3>
+    <label><b>Name</b></label>
+    <input type="text" [(ngModel)]="User.Name" placeholder="Enter Name" name="name" required>
+
+     <label><b>Email</b></label>
+    <input type="text" [(ngModel)]="User.Email" placeholder="Enter Email" name="email" required>
+
+     <label><b>User Name</b></label>
+    <input type="text" [(ngModel)]="User.UserName" placeholder="Enter User Name" name="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" [(ngModel)]="User.Password" placeholder="Enter Password" name="psw" required>
+
+
+       <label><b>Contact Number</b></label>
+       <input type="text" [(ngModel)]="User.ContactNo" placeholder="Enter Contact No" name="conteactno" required>
+
+       <label><b>Address</b></label>
+       <input type="text" width="200px"  [(ngModel)]="User.Address" placeholder="Enter Address" name="address" required>
+ 
+       <div class="clearfix">  
+      <button type="submit" class="signupbtn" (click)="add()">Sign Up</button>
+      <button type="button" class="cancelbtn" >Cancel</button>
+    </div>
+   </div>
+  
+    <div style="width:20px"></div> 
+
+   <div class="col-md-5 well border">
+     <h3 style="text-align:center">Login</h3>
+     <label><b>User Name</b></label>
+    <input type="text" [(ngModel)]="Login.UserName" placeholder="Enter User Name" name="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" [(ngModel)]="Login.Password" placeholder="Enter Password" name="psw" required>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>
